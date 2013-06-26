@@ -9254,24 +9254,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 <library name="RCRECIEVER">
 <packages>
 <package name="6-CHANNEL">
-<pad name="P$1" x="0" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="2.54" y="0" drill="0.8" shape="square"/>
-<pad name="P$3" x="5.08" y="0" drill="0.8" shape="square"/>
-<pad name="P$4" x="0" y="-2.54" drill="0.8" shape="square"/>
-<pad name="P$5" x="2.54" y="-2.54" drill="0.8" shape="square"/>
-<pad name="P$6" x="5.08" y="-2.54" drill="0.8" shape="square"/>
-<pad name="P$7" x="0" y="-5.08" drill="0.8" shape="square"/>
-<pad name="P$8" x="2.54" y="-5.08" drill="0.8" shape="square"/>
-<pad name="P$9" x="5.08" y="-5.08" drill="0.8" shape="square"/>
-<pad name="P$10" x="0" y="-7.62" drill="0.8" shape="square"/>
-<pad name="P$11" x="2.54" y="-7.62" drill="0.8" shape="square"/>
-<pad name="P$12" x="5.08" y="-7.62" drill="0.8" shape="square"/>
-<pad name="P$13" x="0" y="-10.16" drill="0.8" shape="square"/>
-<pad name="P$14" x="2.54" y="-10.16" drill="0.8" shape="square"/>
-<pad name="P$15" x="5.08" y="-10.16" drill="0.8" shape="square"/>
-<pad name="P$16" x="0" y="-12.7" drill="0.8" shape="square"/>
-<pad name="P$17" x="2.54" y="-12.7" drill="0.8" shape="square"/>
-<pad name="P$18" x="5.08" y="-12.7" drill="0.8" shape="square"/>
+<pad name="P$1" x="0" y="0" drill="1.1" shape="square"/>
+<pad name="P$2" x="2.54" y="0" drill="1.1" shape="square"/>
+<pad name="P$3" x="5.08" y="0" drill="1.1" shape="square"/>
+<pad name="P$4" x="0" y="-2.54" drill="1.1" shape="square"/>
+<pad name="P$5" x="2.54" y="-2.54" drill="1.1" shape="square"/>
+<pad name="P$6" x="5.08" y="-2.54" drill="1.1" shape="square"/>
+<pad name="P$7" x="0" y="-5.08" drill="1.1" shape="square"/>
+<pad name="P$8" x="2.54" y="-5.08" drill="1.1" shape="square"/>
+<pad name="P$9" x="5.08" y="-5.08" drill="1.1" shape="square"/>
+<pad name="P$10" x="0" y="-7.62" drill="1.1" shape="square"/>
+<pad name="P$11" x="2.54" y="-7.62" drill="1.1" shape="square"/>
+<pad name="P$12" x="5.08" y="-7.62" drill="1.1" shape="square"/>
+<pad name="P$13" x="0" y="-10.16" drill="1.1" shape="square"/>
+<pad name="P$14" x="2.54" y="-10.16" drill="1.1" shape="square"/>
+<pad name="P$15" x="5.08" y="-10.16" drill="1.1" shape="square"/>
+<pad name="P$16" x="0" y="-12.7" drill="1.1" shape="square"/>
+<pad name="P$17" x="2.54" y="-12.7" drill="1.1" shape="square"/>
+<pad name="P$18" x="5.08" y="-12.7" drill="1.1" shape="square"/>
 <wire x1="-2.54" y1="-15.24" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="2.54" x2="7.62" y2="2.54" width="0.127" layer="21"/>
 <wire x1="7.62" y1="2.54" x2="7.62" y2="-15.24" width="0.127" layer="21"/>
