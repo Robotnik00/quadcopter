@@ -6303,90 +6303,6 @@ Source: DCJ0202.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="zetex">
-<packages>
-<package name="SOD323">
-<description>&lt;b&gt;Small Outline Diode&lt;/b&gt;</description>
-<wire x1="-0.8" y1="0.575" x2="0.8" y2="0.575" width="0.2032" layer="51"/>
-<wire x1="0.8" y1="0.575" x2="0.8" y2="-0.575" width="0.2032" layer="51"/>
-<wire x1="0.8" y1="-0.575" x2="-0.8" y2="-0.575" width="0.2032" layer="51"/>
-<wire x1="-0.8" y1="-0.575" x2="-0.8" y2="0.575" width="0.2032" layer="51"/>
-<smd name="1" x="-1.1" y="0" dx="1" dy="0.6" layer="1"/>
-<smd name="2" x="1.1" y="0" dx="1" dy="0.6" layer="1"/>
-<text x="-0.9" y="0.78" size="1.016" layer="25">&gt;NAME</text>
-<text x="-0.9" y="-1.805" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.35" y1="-0.2" x2="-0.9" y2="0.2" layer="51"/>
-<rectangle x1="0.9" y1="-0.2" x2="1.35" y2="0.2" layer="51"/>
-<rectangle x1="-0.75" y1="-0.575" x2="-0.375" y2="0.575" layer="51"/>
-</package>
-<package name="SOT-23">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="-1.4224" y1="0.381" x2="1.4732" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="0.381" x2="1.4732" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="-0.381" x2="-1.4224" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="-1.4224" y1="-0.381" x2="-1.4224" y2="0.381" width="0.1524" layer="21"/>
-<smd name="3" x="0.9906" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
-<smd name="2" x="-0.9398" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
-<smd name="1" x="0.0254" y="-1.016" dx="0.7874" dy="0.889" layer="1"/>
-<text x="-1.397" y="1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="3.302" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="0.7874" y1="0.4318" x2="1.1684" y2="0.9398" layer="51"/>
-<rectangle x1="-1.143" y1="0.4318" x2="-0.762" y2="0.9398" layer="51"/>
-<rectangle x1="-0.1778" y1="-0.9398" x2="0.2032" y2="-0.4318" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="DIODE">
-<wire x1="-1.016" y1="-1.27" x2="1.016" y2="0" width="0.254" layer="94"/>
-<wire x1="1.016" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.27" x2="1.016" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.27" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.016" y1="0" x2="1.016" y2="-1.27" width="0.254" layer="94"/>
-<text x="2.54" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="D" prefix="D" uservalue="yes">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOD323" package="SOD323">
-<connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="C" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="CDSOD323-T05C" constant="no"/>
-<attribute name="OC_FARNELL" value="1824860" constant="no"/>
-<attribute name="OC_NEWARK" value="79R6078" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="SOT23" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="C" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="CDSOT23-T03" constant="no"/>
-<attribute name="OC_FARNELL" value="1824866" constant="no"/>
-<attribute name="OC_NEWARK" value="75K7096" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-RF">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find things that send or receive RF- GPS, cellular modules, Bluetooth, WiFi, etc.&lt;br&gt;&lt;br&gt;
@@ -9381,7 +9297,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="J1" library="con-jack" deviceset="DCJ0202" device=""/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="D1" library="zetex" deviceset="D" device="SOD323"/>
 <part name="GPS1" library="SparkFun-RF" deviceset="COPERNICUS" device="SMD"/>
 <part name="U$1" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD"/>
 <part name="GPS2" library="SparkFun-RF" deviceset="COPERNICUS" device="SMD"/>
@@ -9490,7 +9405,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="J1" gate="G$1" x="137.16" y="-55.88"/>
 <instance part="P+1" gate="1" x="165.1" y="-45.72"/>
 <instance part="GND1" gate="1" x="152.4" y="-66.04"/>
-<instance part="D1" gate="G$1" x="152.4" y="-53.34"/>
 <instance part="GPS1" gate="G$2" x="-132.08" y="-48.26"/>
 <instance part="U$1" gate="G$1" x="-185.42" y="-50.8"/>
 <instance part="GPS2" gate="G$2" x="-132.08" y="-109.22"/>
@@ -10150,9 +10064,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 </segment>
 <segment>
 <wire x1="165.1" y1="-53.34" x2="165.1" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="-53.34" x2="165.1" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
-<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-53.34" x2="165.1" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -10607,13 +10521,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="127" x2="284.48" y2="129.54" width="0.1524" layer="91"/>
 <label x="284.48" y="129.54" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="144.78" y1="-53.34" x2="149.86" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$10" class="0">
