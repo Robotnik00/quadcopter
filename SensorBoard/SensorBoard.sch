@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9298,13 +9298,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GPS1" library="SparkFun-RF" deviceset="COPERNICUS" device="SMD"/>
-<part name="U$1" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD"/>
 <part name="GPS2" library="SparkFun-RF" deviceset="COPERNICUS" device="SMD"/>
-<part name="U$2" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD"/>
 <part name="GPS3" library="SparkFun-RF" deviceset="COPERNICUS" device="SMD"/>
-<part name="U$3" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD"/>
 <part name="GPS4" library="SparkFun-RF" deviceset="COPERNICUS" device="SMD"/>
-<part name="U$4" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD"/>
 <part name="X7" library="con-molex" deviceset="KK-156-5" device="" value="programmer"/>
 <part name="PWR" library="led" deviceset="LED" device="" value="GREEN"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="0204/5" value="4k"/>
@@ -9349,6 +9345,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="PWR6" library="led" deviceset="LED" device="" value="RED"/>
 <part name="R15" library="resistor" deviceset="R-US_" device="0204/5" value="4k"/>
 <part name="RC" library="RCRECIEVER" deviceset="6-CHANNEL" device=""/>
+<part name="U$5" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD3"/>
+<part name="U$6" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD3"/>
+<part name="U$7" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD3"/>
+<part name="U$8" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD3"/>
 </parts>
 <sheets>
 <sheet>
@@ -9406,13 +9406,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="P+1" gate="1" x="165.1" y="-45.72"/>
 <instance part="GND1" gate="1" x="152.4" y="-66.04"/>
 <instance part="GPS1" gate="G$2" x="-132.08" y="-48.26"/>
-<instance part="U$1" gate="G$1" x="-185.42" y="-50.8"/>
 <instance part="GPS2" gate="G$2" x="-132.08" y="-109.22"/>
-<instance part="U$2" gate="G$1" x="-185.42" y="-111.76"/>
 <instance part="GPS3" gate="G$2" x="-10.16" y="-48.26"/>
-<instance part="U$3" gate="G$1" x="-63.5" y="-50.8"/>
 <instance part="GPS4" gate="G$2" x="-10.16" y="-109.22"/>
-<instance part="U$4" gate="G$1" x="-63.5" y="-111.76"/>
 <instance part="X7" gate="-1" x="-121.92" y="73.66" rot="R180"/>
 <instance part="X7" gate="-2" x="-121.92" y="76.2" rot="R180"/>
 <instance part="X7" gate="-3" x="-121.92" y="78.74" rot="R180"/>
@@ -9514,6 +9510,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="PWR6" gate="G$1" x="284.48" y="111.76"/>
 <instance part="R15" gate="G$1" x="284.48" y="121.92" rot="R90"/>
 <instance part="RC" gate="G$1" x="-119.38" y="116.84" rot="MR0"/>
+<instance part="U$5" gate="G$1" x="-190.5" y="-50.8"/>
+<instance part="U$6" gate="G$1" x="-53.34" y="-50.8"/>
+<instance part="U$7" gate="G$1" x="-190.5" y="-111.76"/>
+<instance part="U$8" gate="G$1" x="-53.34" y="-111.76"/>
 </instances>
 <busses>
 </busses>
@@ -10523,13 +10523,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="284.48" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="GPS1" gate="G$2" pin="RFIN"/>
-<wire x1="-137.16" y1="-55.88" x2="-185.42" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SIGNAL"/>
-</segment>
-</net>
 <net name="GPS1TXA" class="0">
 <segment>
 <pinref part="GPS1" gate="G$2" pin="TXD-A"/>
@@ -10588,13 +10581,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="CY8C5868AXI-LP035" gate="G$1" pin="P1_2"/>
 <wire x1="271.78" y1="-88.9" x2="259.08" y2="-88.9" width="0.1524" layer="91"/>
 <label x="246.38" y="-88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="GPS2" gate="G$2" pin="RFIN"/>
-<wire x1="-137.16" y1="-116.84" x2="-185.42" y2="-116.84" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="SIGNAL"/>
 </segment>
 </net>
 <net name="GPS2TXA" class="0">
@@ -10657,13 +10643,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="256.54" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="GPS3" gate="G$2" pin="RFIN"/>
-<wire x1="-15.24" y1="-55.88" x2="-63.5" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="SIGNAL"/>
-</segment>
-</net>
 <net name="GPS3TXA" class="0">
 <segment>
 <pinref part="GPS3" gate="G$2" pin="TXD-A"/>
@@ -10722,13 +10701,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="CY8C5868AXI-LP035" gate="G$1" pin="P5_0"/>
 <wire x1="271.78" y1="-73.66" x2="269.24" y2="-73.66" width="0.1524" layer="91"/>
 <label x="256.54" y="-73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="GPS4" gate="G$2" pin="RFIN"/>
-<wire x1="-15.24" y1="-116.84" x2="-63.5" y2="-116.84" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="SIGNAL"/>
 </segment>
 </net>
 <net name="GPS4TXA" class="0">
@@ -11520,6 +11492,34 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="CY8C5868AXI-LP035" gate="G$1" pin="P4_2"/>
 <wire x1="345.44" y1="-12.7" x2="345.44" y2="-5.08" width="0.1524" layer="91"/>
 <label x="345.44" y="-5.08" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="SIGNAL"/>
+<pinref part="GPS1" gate="G$2" pin="RFIN"/>
+<wire x1="-190.5" y1="-55.88" x2="-137.16" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="SIGNAL"/>
+<pinref part="GPS2" gate="G$2" pin="RFIN"/>
+<wire x1="-190.5" y1="-116.84" x2="-137.16" y2="-116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="SIGNAL"/>
+<pinref part="GPS3" gate="G$2" pin="RFIN"/>
+<wire x1="-53.34" y1="-55.88" x2="-15.24" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="SIGNAL"/>
+<pinref part="GPS4" gate="G$2" pin="RFIN"/>
+<wire x1="-53.34" y1="-116.84" x2="-15.24" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
