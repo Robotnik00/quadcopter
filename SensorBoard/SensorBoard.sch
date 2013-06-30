@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9302,7 +9302,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GPS3" library="SparkFun-RF" deviceset="COPERNICUS" device="SMD"/>
 <part name="GPS4" library="SparkFun-RF" deviceset="COPERNICUS" device="SMD"/>
 <part name="X7" library="con-molex" deviceset="KK-156-5" device="" value="programmer"/>
-<part name="PWR" library="led" deviceset="LED" device="" value="GREEN"/>
+<part name="PWR" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="0204/5" value="4k"/>
 <part name="ACC" library="SparkFun-Sensors" deviceset="MPU-6000" device="QFN-24"/>
 <part name="C15" library="rcl" deviceset="C-US" device="C0402" value=".1uF"/>
@@ -9329,10 +9329,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="X16" library="con-molex" deviceset="KK-156-4" device="" value="uart2"/>
 <part name="X17" library="con-molex" deviceset="KK-156-4" device="" value="uart3"/>
 <part name="X18" library="con-molex" deviceset="KK-156-4" device="" value="uart4"/>
-<part name="PWR1" library="led" deviceset="LED" device="" value="GREEN"/>
-<part name="PWR2" library="led" deviceset="LED" device="" value="GREEN"/>
-<part name="PWR3" library="led" deviceset="LED" device="" value="GREEN"/>
-<part name="PWR4" library="led" deviceset="LED" device="" value="GREEN"/>
+<part name="PWR1" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
+<part name="PWR2" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
+<part name="PWR3" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
+<part name="PWR4" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="0204/5" value="4k"/>
 <part name="R11" library="resistor" deviceset="R-US_" device="0204/5" value="4k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="0204/5" value="4k"/>
@@ -9340,9 +9340,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="X2" library="con-molex" deviceset="KK-156-3" device="" value="motordriver1"/>
 <part name="X8" library="con-molex" deviceset="KK-156-3" device="" value="motordriver2"/>
 <part name="PI" library="con-molex" deviceset="87758-2616" device=""/>
-<part name="PWR5" library="led" deviceset="LED" device="" value="GREEN"/>
+<part name="PWR5" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
 <part name="R14" library="resistor" deviceset="R-US_" device="0204/5" value="4k"/>
-<part name="PWR6" library="led" deviceset="LED" device="" value="RED"/>
+<part name="PWR6" library="led" deviceset="LED" device="CHIP-LED0603" value="RED"/>
 <part name="R15" library="resistor" deviceset="R-US_" device="0204/5" value="4k"/>
 <part name="RC" library="RCRECIEVER" deviceset="6-CHANNEL" device=""/>
 <part name="U$5" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD3"/>
